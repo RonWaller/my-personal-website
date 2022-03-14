@@ -1,0 +1,53 @@
+.hero {
+    padding-top: 50px;
+    margin-left: 30px;
+}
+
+#logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 601px) {
+    .hero {
+        margin-left: 50px;
+
+        & #nameheading {
+            font-size: 4rem;
+        }
+
+        & h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        margin-left: 50px;
+        padding-top: 75px;
+
+        & #nameheading {
+            font-size: 5rem;
+        }
+
+        & h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        margin-left: 75px;
+    }
+}

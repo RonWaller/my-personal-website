@@ -1,0 +1,44 @@
+ 
+body {
+    background-image: url('/img/homepage-mobile.jpg');
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  body::after {
+    content: '';
+    background-color: rgba(40, 48, 68, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding-top: 25px;
+  }
+  
+  @media (min-width: 768px) {
+    body {
+       
+        background-image: url('/img/homepage-tablet-portrait.jpg');
+
+    }
+  } 
+  
+  @media (min-width: 1200px) {
+      body {
+
+          background-image: url('/img/homepage-desktop.jpg');
+
+      }
+    }

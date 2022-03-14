@@ -1,0 +1,36 @@
+.aboutMe {
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & .img_aboutme {
+        background-image: url('/img/ronwallerbusiness_150w.png');
+        background-size: contain;
+        background-position: center center;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #e54829;
+    }
+
+    & p {
+        width: 100%;
+        padding: 0 30px;
+        font-weight: 500;
+    }
+
+    & img,
+    & h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 601px) {
+    .aboutMe p {
+        font-size: 1.2rem;
+    }
+}
